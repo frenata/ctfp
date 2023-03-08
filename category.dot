@@ -1,0 +1,23 @@
+digraph cat_theory {
+	fontname="Helvetica,Arial,sans-serif"
+		node [fontname="Helvetica,Arial,sans-serif"]
+		edge [fontname="Helvetica,Arial,sans-serif"]
+		rankdir=LR;
+	node [shape = circle];
+	0 [label = "Void"];
+	1 [label = "()"];
+	2 [label = "Bool"];
+
+	0 -> 0 [label = "id"];
+	1 -> 1 [label = "id"];
+	2 -> 2 [label = "id"];
+
+	2 -> 2 [label = "not"];
+	2 -> 1 [label = "unit"];
+
+	0 -> 1 [label = "absurd"];
+	0 -> 2 [label = "absurd"];
+
+	1 -> 2 [label = "true"];
+	1 -> 2 [label = "false"];
+}

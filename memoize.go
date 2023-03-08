@@ -6,7 +6,6 @@ type Funky [A any, B any] struct {
 	Do func(a A) B
 }
 
-
 func fib(n int) int {
 	switch n {
 	case 1:
